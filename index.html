@@ -5,30 +5,57 @@
   <title>8 «Г» класс</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- подключение CSS -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: url("photos/bg.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 42px;
+    }
+
+    .gallery {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Заголовок -->
-  <h1 style="text-align:center; margin:40px 0;">
-    8 «Г» класс — боялась вся школа
-  </h1>
+  <section class="hero">
+    <h1>8 «Г» класс<br>боялась вся школа</h1>
+  </section>
 
-  <!-- Текст -->
-  <p style="max-width:800px; margin:0 auto 40px; text-align:center;">
-    8 «Г» — это не просто класс, а настоящая команда.
-    Мы поддерживаем друг друга и всегда держимся вместе.
-  </p>
-
-  <!-- Фото -->
-  <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-    <img src="photos/class1.jpg" width="250">
-    <img src="photos/class2.jpg" width="250">
-    <img src="photos/class3.jpg" width="250">
-    <img src="photos/class4.jpg" width="250">
-    <img src="photos/class5.jpg" width="250">
-  </div>
+  <section class="gallery">
+    <img src="photos/class1.jpg">
+    <img src="photos/class2.jpg">
+    <img src="photos/class3.jpg">
+    <img src="photos/class4.jpg">
+    <img src="photos/class5.jpg">
+    <img src="photos/class6.jpg">
+  </section>
 
 </body>
 </html>
