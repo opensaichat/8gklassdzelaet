@@ -4,58 +4,31 @@
   <meta charset="UTF-8">
   <title>8 «Г» класс</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- подключение CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>8 «Г» класс<br>боялась вся школа</h1>
-</section>
+  <!-- Заголовок -->
+  <h1 style="text-align:center; margin:40px 0;">
+    8 «Г» класс — боялась вся школа
+  </h1>
 
-<!-- TEXT BLOCKS -->
-<section class="story">
-  <div class="block animate">
-    <h2>Мы — команда</h2>
-    <p>
-      8 «Г» — это не просто класс, а настоящая команда. Мы всегда поддерживаем
-      друг друга и не оставляем своих в трудную минуту.
-    </p>
+  <!-- Текст -->
+  <p style="max-width:800px; margin:0 auto 40px; text-align:center;">
+    8 «Г» — это не просто класс, а настоящая команда.
+    Мы поддерживаем друг друга и всегда держимся вместе.
+  </p>
+
+  <!-- Фото -->
+  <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+    <img src="photos/class1.jpg" width="250">
+    <img src="photos/class2.jpg" width="250">
+    <img src="photos/class3.jpg" width="250">
+    <img src="photos/class4.jpg" width="250">
+    <img src="photos/class5.jpg" width="250">
   </div>
 
-  <div class="block animate">
-    <h2>Доверие и сила</h2>
-    <p>
-      У нас принято помогать, прикрывать товарища и быть рядом.
-      Это делает нас сильнее не только в школе, но и в жизни.
-    </p>
-  </div>
-
-  <div class="block animate">
-    <h2>Класс, которым гордятся</h2>
-    <p>
-      Учителя часто говорят, что 8 «Г» — один из лучших классов.
-      Мы разные, но вместе — единое целое.
-    </p>
-  </div>
-</section>
-
-<!-- PHOTOS -->
-<section class="gallery">
-  <h2>Фотографии нашего класса</h2>
-
-  <div class="photos">
-    <img src="photos/class1.jpg" class="animate">
-    <img src="photos/class2.jpg" class="animate">
-    <img src="photos/class3.jpg" class="animate">
-    <img src="photos/class4.jpg" class="animate">
-    <img src="photos/class5.jpg" class="animate">
-  </div>
-</section>
-
-<!-- THEME BUTTON -->
-<button class="theme-btn" onclick="toggleTheme()">🌙 / ☀️</button>
-
-<script src="script.js"></script>
 </body>
 </html>
