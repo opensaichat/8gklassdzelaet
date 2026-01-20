@@ -1,0 +1,107 @@
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --card: #f4f4f4;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --text: #f1f5f9;
+  --card: #1e293b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.4s;
+}
+
+/* Кнопка темы */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("photos/bg.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+.overlay h2 {
+  font-size: 40px;
+  color: #ff4444;
+}
+
+/* ГАЛЕРЕЯ */
+.gallery-section {
+  padding: 80px 40px;
+}
+
+.gallery-section h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 15px;
+  font-weight: bold;
+}
+
+/* АНИМАЦИЯ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
